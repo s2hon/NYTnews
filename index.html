@@ -9,8 +9,53 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <div class="container">
+       <header><i class="bi bi-newspaper"></i></header>
+
+       <div class="card">
+        <div class="card-header">
+          <i class="bi bi-card-checklist"></i>Search Parameters
+        </div>
+        <div class="card-body">
+            
+       <form>
+        <div class="form-group">
+          <label for="searchTerm">Search Term</label>
+          <input type="text" class="form-control" id="searchTermBox"  placeholder="Enter the name of title">
+         
+        </div>
+        <div class="form-group">
+          <label for="numberRecords">Number of records to retrieve</label>
+          <input type="number" class="form-control" id="numberRecordsBox" placeholder="Add a number">
+        </div>
+        <div class="form-group">
+            <label for="startYear">Start year</label>
+            <input type="date-start" class="form-control" id="startYearBox" placeholder="optional">
+          </div>
+        <div class="form-group">
+            <label for="endYear">End year</label>
+            <input type="endYear" class="form-control" id="endYearBox" placeholder="optional">
+            
+        </div>
+        <button type="submit" class="btn btn-primary">Search <i class="bi bi-search"></i></button>
+
+        <button type="submit" class="btn btn-primary">Clear Results<i class="bi bi-trash"></i></button>
+      </form>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              <i class="bi bi-card-text"></i>Top Articles
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
+
+    </div>
 
 
+
+    </div>
+    
 
 
     <script src="script.js"></script>
